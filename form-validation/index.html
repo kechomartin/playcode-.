@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="" href="">
+      <link rel="" href="">  
+    </head>
+    <body>
+        <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+            <table cellspacing = "2" cellpadding = "2" border = "1">
+               
+               <tr>
+                  <td align = "right">Name</td>
+                  <td><input type = "text" name = "Name" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Email</td>
+                  <td><input type = "text" name = "EMail" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Zip Code</td>
+                  <td><input type = "text" name = "Zip" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Country</td>
+                  <td>
+                     <select name = "Country">
+                        <option value = "-1" selected>[choose yours]</option>
+                        <option value = "1">USA</option>
+                        <option value = "2">UK</option>
+                        <option value = "3">JAPAN</option>
+                        <option value = "4">RUSSIA</option>
+                        <option value = "5">KENYA</option>
+                        <option value = "6">SOUTH AFRICA</option>
+                        <option value = "7">PHILLIPINES</option>
+                        <option value = "8">CAPE VERDE</option>
+
+                     </select>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td align = "right"></td>
+                  <td><input type = "submit" value = "Submit" /></td>
+               </tr>
+               
+            </table>
+         </form>  
+         <script src="/form-validation/index.js"></script>    
+    </body>
+</html>
